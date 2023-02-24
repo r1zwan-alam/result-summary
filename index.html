@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Results summary component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="sm:flex sm:items-center sm:justify-center sm:h-[100vh]">
+
+
+  <div class="container-main sm:rounded-3xl sm:flex sm:items-center sm:justify-center ">
+
+    <div class="hero sm:w-[300px] sm:h-[450px] sm:rounded-3xl">
+      <p class="text-sm sm:mt-3">Your Result</p>
+      <div class="circle sm:w-[50%] sm:aspect-square">
+        <h1 class="text-5xl font-extrabold">76</h1>
+        <p class="text-sm font-light p-1">of 100</p>
+      </div>
+      <h1 class="text-2xl font-extrabold p-3 sm:mt-2">Great</h1>
+      <p class="text-base px-12 pb-4 sm:">You scored higher than 65% of the people who have taken these tests.</p>
+
+
+    </div>
+
+    <div class="lower-half sm:h-[420px] sm:w-[300px] py-4 px-6 sm:py-0">
+      <h1 class="p-4 py-1 font-extrabold inline-block">Summary</h1>
+
+      <div class="container max-w-none">
+        <div class="tabs text-[#ff5757] bg-[#ff57571a] px-3 py-4 my-2 rounded-lg">
+          <div> <img src="./assets/images/icon-reaction.svg" alt="Lightning"> </div>
+          <div> Reaction </div>
+          <div class="text-slate-400"> <span class="text-slate-800 font-[700] pr-1">80 </span> / 100</div>
+        </div>
+        <div class="tabs text-[#ffb01f] bg-[#ffb01f1a] px-3 py-4 my-2 rounded-lg">
+          <div> <img src="./assets/images/icon-memory.svg" alt="Brain"> </div>
+          <div> Memory </div>
+          <div class="text-slate-400"> <span class="text-slate-800 font-[700] pr-1">92 </span> / 100</div>
+        </div>
+        <div class="tabs text-[#00bd91] bg-[#00bd911a] px-3 py-4 my-2 rounded-lg">
+          <div> <img src="./assets/images/icon-verbal.svg" alt="chat"> </div>
+          <div> Verbal </div>
+          <div class="text-slate-400"> <span class="text-slate-800 font-[700] pr-1">61 </span> / 100</div>
+        </div>
+        <div class="tabs text-[#1125d4] bg-[#1125d41a] px-3 py-4 my-2 rounded-lg">
+          <div> <img src="./assets/images/icon-visual.svg" alt="eye"> </div>
+          <div> Visual </div>
+          <div class="text-slate-400"> <span class="text-slate-800 font-[700] pr-1">72 </span> / 100</div>
+        </div>
+        <button
+          class="btn-main font-extrabold py-4 mt-1 bottom-4 w-[100%] sm:w-[100%] text-center sm:py-3 sm:static">Continue</button>
+        <!-- <div class="tabs"> </div> -->
+      </div>
+
+    </div>
+  </div>
+</body>
+
+</html>

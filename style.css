@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-family: 'Hanken Grotesk', sans-serif;
+    /* border: 1px solid red; */
+}
+
+
+
+:root {
+    --red: #ff5757; 
+     --Yellow: #ffb01f1a;
+      --Green: #00bd911a;
+      --Blue: #1125d4;
+
+      --background-grad-blue-300: #7857ff;
+      --background-grad-blue-500: #2e2be9;
+      --circle-blue-600: #4e21ca;
+      --circle-black-300: #2421ca00;
+
+      --White-100: hsl(0, 0%, 100%);
+      --white-200: hsl(221, 100%, 96%);
+      --blue-100: hsl(241, 100%, 89%);
+      --blue-900: hsl(224, 30%, 27%);
+
+
+
+}
+
+
+
+
+.hero {
+    color: var(--White-100);
+    text-align: center;
+    background-color: aqua;
+    background: linear-gradient(#7857ff,#2e2be9);
+    border-radius: 0 0 30px 30px;
+}
+
+.hero p:nth-child(1){
+    padding: 20px 0;
+    font-weight: 500;
+}
+
+
+
+.hero .circle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    place-content: center;
+    margin: auto;
+    /* padding: auto; */
+    aspect-ratio: 1;
+    width: 150px;
+    border-radius: 50%;
+    background: linear-gradient( #4e21ca,#2421ca00);
+}
+
+
+
+.tabs {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.tabs div {
+    text-align: center;
+}
+
+.tabs div:nth-child(3) {
+    margin-left: auto;
+
+}
+
+.tabs div:nth-child(1) {
+    margin-right: 10px;
+}
+
+.btn-main {
+    /* width: 100%; */
+    color: white;
+    border: none;
+    background-color: var(--blue-900);
+    border-radius: 50px;
+}
+
+@media screen and (min-width:640px) {
+    .container-main {
+            /* border: 2px solid #1125d4; */
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    
+        }
+}
